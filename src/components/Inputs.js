@@ -11,7 +11,7 @@ function Inputs() {
     const[password,setPassword] = useState('')
    
     useEffect(()=>{
-         axios.get('http://localhost:3000/contactData').then ((res)=>{
+         axios.get('https://test-react-json.herokuapp.com/contactData').then ((res)=>{
             dispatch(getToList(res.data))
         })
     },[dispatch])
